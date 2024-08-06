@@ -1,15 +1,30 @@
-# Lung-Cancer-Detection-using-CNN
-Lung Cancer Detection using CNN
+# 🌟 Lung Cancer Detection using Convolutional Neural Networks (CNN) 🌟
 
+## 📖 Overview
 
+This project focuses on developing algorithms that accurately determine when lesions in the lungs are cancerous using a dataset of high-resolution lung scans provided by the National Cancer Institute. The goal is to reduce the false positive rate in current detection technology, enable earlier access to life-saving interventions, and allow radiologists to spend more time with their patients.
 
-Using a data set of thousands of high-resolution lung scans provided by the National Cancer Institute, participants developed algorithms that accurately determine when lesions in the lungs are cancerous. This will dramatically reduce the false positive rate that plagues the current detection technology, get patients earlier access to life-saving interventions, and give radiologists more time to spend with their patients.
-NOTE: due to data set usage restrictions, the data for this competition is no longer available for download.
+## 📂 Dataset
 
-In this dataset, you are given over a thousand low-dose CT images from high-risk patients in DICOM format. Each image contains a series with multiple axial slices of the chest cavity. Each image has a variable number of 2D slices, which can vary based on the machine taking the scan and patient.
+The dataset includes over a thousand low-dose CT images from high-risk patients in DICOM format. Each image contains a series with multiple axial slices of the chest cavity. The number of 2D slices varies based on the machine and the patient. The DICOM files contain headers with patient ID and scan parameters such as slice thickness.
 
-The DICOM files have a header that contains the necessary information about the patient id, as well as scan parameters such as the slice thickness.
+### Key Points:
+- *Source*: National Cancer Institute
+- *Format*: DICOM
+- *Content*: Low-dose CT images with multiple axial slices
+- *Patient Data*: High-risk patients
+- *Labels*: Pathology-confirmed ground truth labels
 
-The task is to create an automated method capable of determining whether or not the patient will be diagnosed with lung cancer within one year of the date the scan was taken. The ground truth labels were confirmed by pathology diagnosis.
+## 🎯 Objective
 
-The images in this dataset come from many sources and will vary in quality. For example, older scans were imaged with less sophisticated equipment. You should expect the stage 2 data to be, on the whole, more recent and higher quality than the stage 1 data (generally having thinner slice thickness). Ideally, your algorithm should perform well across a range of image quality.
+The task is to create an automated method capable of determining whether a patient will be diagnosed with lung cancer within one year of the date the scan was taken. The algorithm should perform well across a range of image qualities, including older scans with less sophisticated equipment and newer, higher-quality scans.
+
+## 📁 Project Structure
+
+```bash
+├── data/            # Contains DICOM files for CT images
+├── notebooks/       # Jupyter notebooks for data exploration and model development
+├── src/             # Source code for the project, including data preprocessing, model training, and evaluation scripts
+├── models/          # Saved models and checkpoints
+├── results/         # Results and evaluation metrics
+└── README.md        # Project documentation
